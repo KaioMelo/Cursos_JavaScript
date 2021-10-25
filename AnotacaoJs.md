@@ -119,9 +119,9 @@ window.alert(`A soma entre ${n1} e ${n2} dos valores é igual a: ${s}`)
 
 ### Formatando String
 
-<!-- var s = 'JavaScript' -->
-
-
+```
+var s = 'JavaScript'
+```
 
 <!-- Quantos caracteres uma string tem-->
 
@@ -144,9 +144,9 @@ s.toLowerCase()
 
 ### Formatando com Números
 
-<!-- var n = 1,500.5 -->
-
-
+```
+var n = 1,500.5 
+```
 
 <!-- adicionar casas decimais -->
 
@@ -154,9 +154,229 @@ s.toLowerCase()
 n.tofixed()
 ```
 
-<!-- Real Brasileiro -->
+<!-- valor monetário -->
 
 ```
 n.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
 ```
+
+
+
+## Operadores
+
+
+
+### Aritméticos 
+
+<ul>
+    <li><strong>+</strong>  soma</li>
+    <li><strong>-</strong>  subtração</li>
+    <li><strong>*</strong>  multiplicação</li>
+    <li><strong>/</strong>  divisão</li>
+    <li><strong>%</strong>  resto da divisão</li>
+    <li><strong>**</strong> potência</li>
+</ul>
+
+
+
+#### Ordem de precedência
+
+ 
+
+<ul>
+    <li><strong>()</strong></li>
+    <li><strong>**</strong></li>
+    <li><strong>*</strong></li>
+    <li><strong>/</strong></li>
+    <li><strong>%</strong></li>
+    <li><strong>+</strong></li>
+    <li><strong>-</strong></li>
+</ul>
+
+
+#### Incremento
+
+ 
+
+num = num + 1
+
+num += 1
+
+
+
+++n <!-- pré-incremento -->
+
+n++ <!-- pós-incremento -->
+
+
+
+
+### Atribuição
+
+
+
+<ul>
+    <li><strong>=</strong> Atribuição</li>
+    <li><strong>+=</strong> Atribuição de soma</li>
+    <li><strong>-=</strong> Atribuição de subtração</li>
+    <li><strong>*=</strong>	Atribuição de multiplicação</li>
+    <li><strong>/=</strong> Atribuição de divisão</li>
+    <li><strong>%=</strong> Atribuição de resto</li>
+    <li><strong>**=</strong> Atribuição de potência</li>
+</ul>
+
+
+### Relacionais
+
+
+
+<ul>
+    <li><strong>></strong> maior</li>
+    <li><strong><</strong> menor</li>
+    <li><strong>>=</strong> maior ou igual</li>
+    <li><strong><=</strong>	menor ou igual</li>
+    <li><strong>==</strong> igual</li>
+    <li><strong>!=</strong> diferente</li>
+</ul>
+
+
+### Identidade
+
+<!--Mesmo valor e tipo-->
+
+```
+5 === '5' falso
+```
+
+
+
+### Lógicos
+
+
+
+<ul>
+    <li><strong>!</strong> negação</li>
+    <li><strong>&&</strong> conjunção</li>
+    <li><strong>||</strong> disjunção</li>
+</ul>
+
+
+## DOM - Document Object Manipulation
+
+
+
+### Seleção
+
+
+
+<ul>
+    <li>por<strong> Marca</strong></li>
+    <li>por <strong> ID</strong></li>
+    <li>por<strong> Nome</strong></li>
+    <li>por<strong> Classe</strong></li>
+    <li>por<strong> Seletor</strong></li>
+</ul>
+
+
+
+#### Marca
+
+
+
+```
+getElementsByTagName()
+```
+
+
+<!--p1 igual a paragrafo-->
+
+```
+var p1 = window.document.getElementsByName('p')[1]
+```
+
+
+
+#### ID
+
+
+
+```
+getElementById()
+```
+
+
+
+#### Nome
+
+
+
+```
+getElementsByName()
+```
+
+
+
+#### Classe
+
+
+
+```
+getElementsByClassName()
+```
+
+
+
+#### Seletor
+
+
+
+```
+querySelector()
+querySelectorAll()
+```
+
+
+
+<!--Todo 'ID' é representado por '#' -->
+
+```
+<div id="msg"></div>
+
+var d = window.document.querySelector('div#msg')
+```
+<!--Todo 'Classe' é representado por 'ponto' -->
+
+```
+<div class="msg"></div>
+
+var d = window.document.querySelector('div.msg')
+```
+
+
+
+### Eventos DOM
+
+
+
+<p>JavaScript Dom event list</p>
+
+
+
+#### Função
+
+
+
+<p>Conjunto de códigos, que vão ser executadas somente com a execução do evento</p>
+
+
+
+```
+function ação(){
+
+bloco
+
+}
+```
+
+
 
