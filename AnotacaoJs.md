@@ -380,3 +380,74 @@ bloco
 
 
 
+## Condição
+
+
+
+### Tipos de Condição
+
+
+
+#### Condição simples 
+
+
+
+```
+if (condição){
+	true
+}
+```
+
+#### Condição Composta
+
+
+
+```
+if (condição){
+	true
+}else{
+	false
+}
+```
+
+
+
+#### Condição Encadeada
+
+
+
+```
+if (condição 1){
+	bloco1
+}else{
+	if(condição 2){
+		bloco2
+	}else{
+		bloco3
+	}
+}
+```
+
+
+
+#### Condição Múltiplas
+
+
+
+```
+switch(expressão){
+
+case valor 1:
+
+	break
+case valor 2:
+
+	break
+case valor 3:
+
+	break
+
+default:
+}
+```
+
