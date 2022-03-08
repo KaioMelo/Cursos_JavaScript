@@ -449,5 +449,49 @@ case valor 3:
 
 default:
 }
+
 ```
 
+## Repetição
+
+
+
+### While
+
+```
+while(c <= 10){
+
+}
+```
+
+
+
+### Do...While
+
+```
+Do{
+
+}While(c <= 10)
+```
+
+
+
+### For
+
+```
+For(var c = 1; c <= 10; c++){
+
+}
+```
+
+
+
+## Variáveis
+
+
+
+```
+Var c = 1 <!--Define uma variável global-->
+
+Let c = 1 <!--Define variaveis limitadas de seu escopo no blobo-->
+```
