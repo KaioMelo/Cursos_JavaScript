@@ -490,8 +490,35 @@ For(var c = 1; c <= 10; c++){
 
 
 
+### Variáveis Simples
+
 ```
 Var c = 1 <!--Define uma variável global-->
 
 Let c = 1 <!--Define variaveis limitadas de seu escopo no blobo-->
 ```
+
+
+
+### Variáveis Compostas
+
+
+
+```
+let num = [8,8,4] 
+
+num[3] = 6 <!--Adicionanco valor na posição 3-->
+
+num.push(7) <!--Adicionado valor na ultima casa-->
+
+num.length <!--exibir quant. de elementos do vetor-->
+
+num.sort() <!--Ordenar vetor-->
+
+num.indexOf(n) <!--Localizar elemento no vetor-->
+```
+
+
+
+## Funções
+
