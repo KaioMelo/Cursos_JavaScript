@@ -484,7 +484,21 @@ For(var c = 1; c <= 10; c++){
 }
 ```
 
+### For/in
+<!--Funciona como uma repetição a partir de uma propriedade-->
+```
+For([indice] in [objeto ou array]){
+	declaracao	
+}
+```
 
+### For/of
+<!--Funciona como uma repetição a partir de uma valor-->
+```
+For([indice] of [objeto ou array]){
+	declaracao	
+}
+```
 
 ## Variáveis
 
@@ -522,3 +536,79 @@ num.indexOf(n) <!--Localizar elemento no vetor-->
 
 ## Funções
 
+```
+function nomeDaFuncao(){
+
+}
+nomeDaFuncao();
+```
+
+### Funções com parâmetros
+
+```
+function nomeDaFuncao(parametro){
+	${intrucao};
+}
+nomeDaFuncao(valorDoParametro);
+```
+
+### Função declarativa
+<!--O nome da função é obrigatória-->
+```
+function nomeDaFuncao(){
+	${intrucao};
+}
+nomeDaFuncao();
+```
+### Arrow function
+<!--São funções de expressão de sintaxe curta-->
+```
+var fincao = () => {
+	${intrucao};
+}
+
+```
+
+## Map vs Objeto
+<!--Uma coleção de arrays no formato [chave, valor];-->
+<!--Pode ser iterado por um loop for...of-->
+
+```
+const myMap = new Map();
+
+myMap.set('apple','fruit'); /*Adicionar: chave -> valor*/
+
+myMap.get("apple"); /*verificar*/
+
+myMap.delete("apple"); /*remover*/
+
+```
+
+<ul>
+	<li>Maps podem ter chaves de qualquer tipo;</li>
+	<li>Maps possuem a propriedade lenght;</li>
+	<li>Maps são mais fáceis de iterar;</li>
+	<li>Utilizando quando o valor das chaves é desconhecidos;</li>
+	<li>Os valores tem mesmo tipo;</li>
+</ul>
+
+## Set vs Array
+<!--Sets são estruturas que armazenam apenas valores únicos-->
+
+```
+const mySet = new Set();
+
+mySet.add(1); /*Adiconar*/
+
+mySet.has(1); /*Verificar*/
+
+mySet.delete(1); /*Deletar*/
+
+
+```
+
+<ul>
+	<li>Possui valores únicos;</li>
+	<li>Em vez da propriedade lenght, consulta-se o número de registros pela propriedade size;</li>
+	<li>Não possui os métodos map, filter, reduce etc;</li>
+</ul>
