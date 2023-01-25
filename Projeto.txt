@@ -1,0 +1,21 @@
+Nome do projeto: Babie's line Hair, blues Hair, Little Beautifyl
+				 Nossa Beleza, Faixa rosa line, Incrível beleza
+				 Nosso Style, Style Hair, Fofinha's Hair, Ai que Delicia,
+				 recanto da beleza
+
+tecnologias: html5, Css3(grid e animações), Javascript, ReactJs e Axios
+
+- Template/Layout(Canvas)
+- Paleta de cores (color adobe)
+- Fontes(fonts google)
+- Estrutura de pastas e arquivos
+- DB json-server integrante do gp
+- 
+
+Links exemplos: 
+
+- 
+- 
+- 
+- 
+-
