@@ -1,4 +1,4 @@
-import ListaDeInflacao from "./ListaDeInflacao.js"
+import ListaDeInflacao from "../Listas/ListaDeInflacao.js"
 
 const ListaInflacao = () => {
     ListaDeInflacao.forEach(e => {

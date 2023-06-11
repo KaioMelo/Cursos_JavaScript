@@ -1,4 +1,4 @@
-import ListaDeSalarios from "./ListaDeSalarios.js";
+import ListaDeSalarios from "../Listas/ListaDeSalarios.js";
 
 const ListaSalario = () => {
   ListaDeSalarios.forEach((e) => {

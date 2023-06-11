@@ -1,6 +1,6 @@
 import rlsync from "readline-sync";
-import ListaSalario from "./FormatarSalario.js";
-import ListaInflacao from "./FormatarInflacao.js"
+import ListaSalario from "./Formatacao/FormatarSalario.js";
+import ListaInflacao from "./Formatacao/FormatarInflacao.js"
 
 console.log("Escolha uma das alternativas: ");
 console.log("1 - Lista os salários minímos de 2010 à 2020");
