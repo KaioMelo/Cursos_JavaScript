@@ -1,5 +1,6 @@
 import rlsync from "readline-sync";
-import Lista from "./FormatarSalario.js";
+import ListaSalario from "./FormatarSalario.js";
+import ListaInflacao from "./FormatarInflacao.js"
 
 console.log("Escolha uma das alternativas: ");
 console.log("1 - Lista os salários minímos de 2010 à 2020");
@@ -10,10 +11,10 @@ const resp = rlsync.question("Digite o numero da sua escolha: ");
 
 switch (resp) {
   case "1":
-    Lista()
+    ListaSalario()
     break;
   case "2":
-    console.log(`Opção escolhida : ${resp}`);
+    ListaInflacao()
     break;
   case "3":
     console.log(`Opção escolhida : ${resp}`);

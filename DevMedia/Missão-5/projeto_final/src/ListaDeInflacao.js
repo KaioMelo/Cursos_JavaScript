@@ -45,4 +45,4 @@ const inflacao = [
   },
 ];
 
-export {inflacao}
+export default inflacao
