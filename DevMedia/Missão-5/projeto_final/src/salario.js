@@ -1,6 +1,7 @@
 import rlsync from "readline-sync";
 import ListaSalario from "./Formatacao/FormatarSalario.js";
 import ListaInflacao from "./Formatacao/FormatarInflacao.js"
+import Comparacao from "./Formatacao/FormatacaoComparacao.js";
 
 console.log("Escolha uma das alternativas: ");
 console.log("1 - Lista os salários minímos de 2010 à 2020");
@@ -13,11 +14,11 @@ switch (resp) {
   case "1":
     ListaSalario()
     break;
-  case "2":
+  case "2": 
     ListaInflacao()
     break;
   case "3":
-    console.log(`Opção escolhida : ${resp}`);
+    Comparacao()
     break;
   default:
     console.log("Opção Inválida!");
