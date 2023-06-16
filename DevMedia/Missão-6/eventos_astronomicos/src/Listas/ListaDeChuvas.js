@@ -1,193 +1,225 @@
 const ListaDeChuvas = [
     {
         nome: 'Quadrântidas',
-        periodo: '28/12 à 12/01',
+        inicio: '12/28',
+        fim: '01/12',
         itensidade: '3 (Forte)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Alfa Centaurídeos',
-        periodo: '28/01 à 21/02',
+        inicio: '01/28 ',
+        fim: '02/21',
         itensidade: '2 (Média)',
         hemisferio: 'Sul'
     },
     {
         nome: 'Gama Normídeos',
-        periodo: '25/02 à 22/03',
+        inicio: '02/25',
+        fim: '03/22',
         itensidade: '02 (Média)',
         hemisferio: 'Sul'
     }, 
     {
         nome: 'Líridas',
-        periodo: '16/04 à 25/04',
+        inicio: '04/16',
+        fim: '04/25',
         itensidade: '3 (Forte)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Pi Pupídeos',
-        periodo: '15/04 à 28/04',
+        inicio: '04/15',
+        fim: '04/28',
         itensidade: 'Irregular',
         hemisferio: 'Sul'
     }, 
     {
         nome: 'Eta Aquáridas',
-        periodo: '19/04 à 28/05',
+        inicio: '04/19',
+        fim: '05/28',
         itensidade: '3 (Forte)',
         hemisferio: 'Sul'
     }, 
     {
         nome: 'Eta Líridas',
-        periodo: '03/05 à 14/05',
+        inicio: '05/03',
+        fim: '05/14',
         itensidade: '1 (Fraca)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Bootídeos de Junho',
-        periodo: '28/06 à 28/06',
+        inicio: '06/28',
+        fim: '06/28',
         itensidade: 'Irregular',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Piscis Austrinídeos',
-        periodo: '15/07 à 10/08',
+        inicio: '07/15',
+        fim: '08/10',
         itensidade: '2 (Média)',
         hemisferio: 'Sul'
     }, 
     {
         nome: 'Delta Aquáridas do Sul',
-        periodo: '12/07 à 19/08',
+        inicio: '07/12',
+        fim: '08/19',
         itensidade: '3 (Forte)',
         hemisferio: 'Sul'
     }, 
     {
         nome: 'Alfa Capricornídeos',
-        periodo: '03/07 à 15/08',
+        inicio: '07/03',
+        fim: '08/15',
         itensidade: '1 (Fraca)',
         hemisferio: 'Sul'
     },  
     {
         nome: 'Perseidas',
-        periodo: '17/07 à 24/08',
+        inicio: '07/17',
+        fim: '08/24',
         itensidade: '3 (Forte)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Capa Cignídeos',
-        periodo: '03/08 à 25/08',
+        inicio: '08/03',
+        fim: '08/25',
         itensidade: '1 (Fraca)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Alfa Aurigídeos',
-        periodo: '25/08 à 08/09',
+        inicio: '08/25',
+        fim: '09/08',
         itensidade: '2 (Média)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Perseidas de Setembro',
-        periodo: '05/09 à 10/10',
+        inicio: '09/05',
+        fim: '10/10',
         itensidade: '2 (Média)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Dracónidas',
-        periodo: '06/10 à 10/10',
+        inicio: '10/06',
+        fim: '10/10',
         itensidade: 'Irregular',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Táuridas do Sul',
-        periodo: '10/09 à 20/11',
+        inicio: '09/10',
+        fim: '11/20',
         itensidade: '1 (Fraca)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Delta Aurigídeos',
-        periodo: '22/09 à 23/10',
+        inicio: '09/22',
+        fim: '10/23',
         itensidade: '1 (Fraca)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Épsilon Geminídeos',
-        periodo: '14/10 à 27/10',
+        inicio: '10/14',
+        fim: '10/27',
         itensidade: '1 (Fraca)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Oriónidas',
-        periodo: '02/10 à 07/11',
+        inicio: '10/02',
+        fim: '11/07',
         itensidade: '3 (Forte)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Leo Minorídeos',
-        periodo: '21/10 à 23/10',
+        inicio: '10/21',
+        fim: '10/23',
         itensidade: '1 (Fraca)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Táuridas do Norte',
-        periodo: '01/11 à 25/11',
+        inicio: '11/01',
+        fim: '11/25',
         itensidade: '2 (Médio)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Leónidas',
-        periodo: '14/11 à 21/11',
+        inicio: '11/14',
+        fim: '11/21',
         itensidade: 'Irregular',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Alfa Monocerotídeos',
-        periodo: '15/11 à 25/11',
+        inicio: '11/15',
+        fim: '11/25',
         itensidade: 'Irregular',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Fenícidas',
-        periodo: '28/11 à 09/12',
+        inicio: '11/28',
+        fim: '12/09',
         itensidade: 'Irregular',
         hemisferio: 'Sul'
     }, 
     {
         nome: 'Pupidas-Velidas',
-        periodo: '02/12 à 16/12',
+        inicio: '12/02',
+        fim: '12/16',
         itensidade: '2 (Média)',
         hemisferio: 'Sul'
     }, 
     {
         nome: 'Monocerotídeos',
-        periodo: '27/11 à 17/12',
+        inicio: '11/27',
+        fim: '12/17',
         itensidade: '1 (Fraca)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Sigma Hidrídeos',
-        periodo: '03/12 à 15/12',
+        inicio: '12/03',
+        fim: '12/15',
         itensidade: '1 (Fraca)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Gemínidas',
-        periodo: '07/12 à 17/12',
+        inicio: '12/07',
+        fim: '12/17',
         itensidade: '3 (Forte)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Coma Berenicídeos',
-        periodo: '12/12 à 23/01',
+        inicio: '12/12',
+        fim: '01/23',
         itensidade: '1 (Fraca)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Leo Minorídeos de Dezembro',
-        periodo: '05/12 à 04/02',
+        inicio: '12/05',
+        fim: '02/04',
         itensidade: '2 (Média)',
         hemisferio: 'Norte'
     }, 
     {
         nome: 'Úrsidas',
-        periodo: '17/12 à 26/12',
+        inicio: '12/17',
+        fim: '12/26',
         itensidade: '2 (Média)',
         hemisferio: 'Norte'
     }
