@@ -10,18 +10,13 @@ function FormatarDataAtual(data) {
 }
 
 const dataAtual = new Date();
-const dataFormatada = FormatarDataAtual(dataAtual);
+const dataFormatada = "2023-07-10";
 
 // Manipulando datas de Inicio e Fim da Lista de chuvas de meteoros
 function FormatarDataArrayHoje() {
-  let datas = [];
-  const mesAtual = dataAtual.getMonth() + 1;
+  let datasHoje = [];
   ListaDeChuvas.forEach((e) => {
     let inicio = e.inicio;
-    // dividindo uma data com formato 00/00 em 2 arrays
-    let dividindoData = e.inicio.split("/");
-    let mesInicial = Number(dividindoData[0]);
-    // formatando e trocando sianl de barra / por -
     let formatInicio = inicio.replace("/", "-");
     let dataInicio = `${dataAtual.getFullYear()}-${formatInicio}`;
 
@@ -32,36 +27,77 @@ function FormatarDataArrayHoje() {
     if (dataInicio > dataFim) {
       dataFim = `${dataAtual.getFullYear() + 1}-${formatFim}`;
     }
-// PAREI AQUI -----
-    if (mesAtual > mesInicial) {
-      dataInicio = `${dataAtual.getFullYear() + 1}-${formatFim}`;
-    }
-
-    datas.push([dataInicio, dataFim, mesInicial]);
+    datasHoje.push([dataInicio, dataFim]);
   });
+  return datasHoje;
+}
 
-  return datas;
+function FormatarDataArrayProximos() {
+  let datasProximas = [];
+  ListaDeChuvas.forEach((e) => {
+    let inicio = e.inicio;
+    let formatInicio = inicio.replace("/", "-");
+    let dataInicio = `${dataAtual.getFullYear()}-${formatInicio}`;
+    let dividindoData = e.inicio.split("/");
+    let mesInicial = Number(dividindoData[0]);
+    const mesAtual = dataAtual.getMonth() + 1;
+    if (mesAtual > mesInicial) {
+      dataInicio = `${dataAtual.getFullYear() + 1}-${formatInicio}`;
+    }
+    datasProximas.push([dataInicio, mesInicial]);
+  });
+  return datasProximas;
 }
 
 // Recebe as formatações de Datas de hoje e da lista de array e retorna valor depois da condição
 const ChuvasHoje = () => {
   const datasChuvas = FormatarDataArrayHoje();
   let chuvaEncontrada = false;
-
+  let resultados = [];
   for (let i = 0; i < ListaDeChuvas.length; i++) {
     const [dataInicio, dataFim] = datasChuvas[i];
-    let cont;
+    let cont = 0;
     if (dataFormatada >= dataInicio && dataFormatada <= dataFim) {
-      return [dataAtual, dataInicio, dataFim];
-      cont += 1;
+      resultados.push({
+        nome: ListaDeChuvas[i].nome,
+        inicio: ListaDeChuvas[i].inicio,
+        Fim: ListaDeChuvas[i].fim,
+        itensidade: ListaDeChuvas[i].itensidade,
+        hemisferio: ListaDeChuvas[i].hemisferio,
+      });
       chuvaEncontrada = true;
     }
   }
   if (!chuvaEncontrada) {
-    console.log("Não há previsão de chuva para hoje.");
+    return false;
   }
+  return resultados;
 };
 
-const ChuvaProximos2Meses = () => {};
+const ChuvaProximos2Meses = () => {
+  const chuvasProximas = FormatarDataArrayProximos();
+  const mesAtual = dataAtual.getMonth() + 1;
+  const mesProximoss2 = mesAtual + 2
+  let resultados = [];
+  let chuvaEncontrada = false;
+  for (let i in ListaDeChuvas) {
+    const [mesInicial] = chuvasProximas[i];
+    let cont = 0;
+    if (mesAtual > mesInicial && mesAtual < mesProximoss2) {
+      resultados.push({
+        nome: ListaDeChuvas[i].nome,
+        inicio: ListaDeChuvas[i].inicio,
+        Fim: ListaDeChuvas[i].fim,
+        itensidade: ListaDeChuvas[i].itensidade,
+        hemisferio: ListaDeChuvas[i].hemisferio,
+      });
+      chuvaEncontrada = true;
+    }
+  }
+  if (!chuvaEncontrada) {
+    return false;
+  }
+  return resultados;
+};
 
-export default ChuvasHoje;
+export { ChuvasHoje, ChuvaProximos2Meses };
