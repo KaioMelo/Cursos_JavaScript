@@ -12,7 +12,7 @@ console.log(novoParagrafo);
 
 body.appendChild(novoParagrafo)
 
-// inserindo elemnto no container
+// inserindo elemento no container
 
 var container = document.getElementById("container")
 console.log(container)
